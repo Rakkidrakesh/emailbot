@@ -1,0 +1,55 @@
+<style>
+    .news-grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .news-article { border: 1px solid #eee; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+    .news-article .post-date { background-color: #E60000; color: white; padding: 5px 8px; display: inline-block; margin-bottom: 10px; font-size: 0.8em; border-radius: 3px; text-align: center;}
+    .news-article .post-date .day { display: block; font-size: 1.5em; font-weight: bold; }
+    .news-article .post-date .month-year { font-size: 0.8em; }
+    .news-article .news-image-link img { max-width: 100%; height: auto; margin-bottom: 10px; border: 1px solid #ddd; }
+    .news-article .news-title { font-size: 1.1em; margin-bottom: 10px; }
+    .news-article .news-title a { text-decoration: none; color: #333; }
+    .news-article .news-title a:hover { color: #E60000; }
+    .news-article .read-more-link { display: inline-block; margin-top: 10px; color: #E60000; text-decoration: none; font-weight: bold; }
+</style>
+
+<section class="content-section">
+    <h2>Latest News</h2>
+    <p><em>Note: The news slider from the original site requires JavaScript. This is a static grid display.</em></p>
+    <div class="news-grid-container">
+        <article class="news-article">
+            <div class="post-date"><span class="day">11</span><span class="month-year">Aug 2021</span></div>
+            <a href="https://globalfeeders.com/gfs-revamps-ccg-service/" target="_blank" class="news-image-link">
+                <img decoding="async" src="https://globalfeeders.com/wp-content/uploads/2020/01/gfs-logo.png" alt="GFS revamps CCG service">
+            </a>
+            <h3 class="news-title"><a href="https://globalfeeders.com/gfs-revamps-ccg-service/" target="_blank">GFS revamps CCG service</a></h3>
+            <a href="https://globalfeeders.com/gfs-revamps-ccg-service/" target="_blank" class="read-more-link">Read More</a>
+        </article>
+
+        <article class="news-article">
+            <div class="post-date"><span class="day">13</span><span class="month-year">Apr 2021</span></div>
+             <a href="https://globalfeeders.com/tim-s-takeover-in-singapore/" target="_blank" class="news-image-link">
+                <img decoding="async" src="https://globalfeeders.com/wp-content/uploads/2020/01/gfs-logo.png" alt="Tim-S.: Takeover in Singapore">
+            </a>
+            <h3 class="news-title"><a href="https://globalfeeders.com/tim-s-takeover-in-singapore/" target="_blank">Tim-S.: Takeover in Singapore</a></h3>
+            <a href="https://globalfeeders.com/tim-s-takeover-in-singapore/" target="_blank" class="read-more-link">Read More</a>
+        </article>
+
+        <article class="news-article">
+            <div class="post-date"><span class="day">13</span><span class="month-year">Apr 2021</span></div>
+             <a href="https://globalfeeders.com/gfs-perfect-another-addition-to-our-growing-fleet/" target="_blank" class="news-image-link">
+                <img decoding="async" src="https://globalfeeders.com/wp-content/uploads/2020/01/gfs-logo.png" alt="GFS Perfect">
+            </a>
+            <h3 class="news-title"><a href="https://globalfeeders.com/gfs-perfect-another-addition-to-our-growing-fleet/" target="_blank">GFS Perfect: Another addition to our growing fleet</a></h3>
+            <a href="https://globalfeeders.com/gfs-perfect-another-addition-to-our-growing-fleet/" target="_blank" class="read-more-link">Read More</a>
+        </article>
+
+        <article class="news-article">
+            <div class="post-date"><span class="day">26</span><span class="month-year">Feb 2021</span></div>
+             <a href="https://globalfeeders.com/gfs-groups-signs-neptune-declaration/" target="_blank" class="news-image-link">
+                <img decoding="async" src="https://globalfeeders.com/wp-content/uploads/2020/01/gfs-logo.png" alt="Neptune Declaration">
+            </a>
+            <h3 class="news-title"><a href="https://globalfeeders.com/gfs-groups-signs-neptune-declaration/" target="_blank">GFS Groups Signs Neptune Declaration</a></h3>
+            <a href="https://globalfeeders.com/gfs-groups-signs-neptune-declaration/" target="_blank" class="read-more-link">Read More</a>
+        </article>
+        <!-- Add more news articles here -->
+    </div>
+</section>

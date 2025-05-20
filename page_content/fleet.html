@@ -1,0 +1,64 @@
+    <!-- Extracted from your provided HTML -->
+    <style type="text/css" media="all">
+        .fleet-grid { display: flex; flex-direction: column; gap: 30px; }
+        .fleet-item-row { display: flex; flex-wrap: wrap; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 30px; margin-bottom: 30px; }
+        .fleet-item-row:last-child { border-bottom: none; margin-bottom: 0; }
+        .fleet-image-col { flex: 1 1 45%; min-width: 280px; padding-right: 20px; }
+        .fleet-image-col img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; }
+        .fleet-details-col { flex: 1 1 50%; min-width: 280px; }
+        .fleet-details-col h5 { font-size: 1.3em; margin-bottom: 10px; text-transform: initial !important; color: #E60000; }
+        .fleet-details-col p { margin-bottom: 0; line-height: 1.8; }
+        @media (max-width: 768px) {
+            .fleet-item-row { flex-direction: column; text-align: center; }
+            .fleet-image-col { padding-right: 0; margin-bottom: 15px; }
+        }
+    </style>
+
+    <section class="fleet-grid">
+        <h2>Our Fleet</h2>
+
+        <div class="fleet-item-row">
+            <div class="fleet-image-col">
+                <img decoding="async" src="https://globalfeeders.com/wp-content/uploads/2023/05/Andrea.jpg" alt="Andrea">
+            </div>
+            <div class="fleet-details-col">
+                <h5>Andrea</h5>
+                <p>Built: 2005<br>Deadweight: 11,150 t<br>Gross Tonnage: 9,981 t<br>Container Capacity: 612 TEU<br>Reefer Capacity: 234 sockets<br>Length Overall: 134.44 m</p>
+            </div>
+        </div>
+
+        <div class="fleet-item-row">
+            <div class="fleet-image-col">
+                <img decoding="async" src="https://globalfeeders.com/wp-content/uploads/2023/03/AS-Rafaela.jpg" alt="Onur GA">
+            </div>
+            <div class="fleet-details-col">
+                <h5>Onur GA</h5>
+                <p>Built: 2007<br>Deadweight: 20,291 MT<br>Gross Tonnage: 15,995 MT<br>Container Capacity: 1,440 TEU<br>Reefer Capacity: 174 sockets<br>Length Overall: 170.15 m</p>
+            </div>
+        </div>
+
+        <div class="fleet-item-row">
+            <div class="fleet-image-col">
+                <img decoding="async" src="https://globalfeeders.com/wp-content/uploads/2017/08/Athena_new.jpg" alt="Athena">
+            </div>
+            <div class="fleet-details-col">
+                <h5>Athena</h5>
+                <p>Built: 1999<br>Deadweight: 30,322 t<br>Gross Tonnage: 24,724 t<br>Container Capacity: 2,011 TEU<br>Reefer Capacity: 200 sockets<br>Length Overall: 200 m</p>
+            </div>
+        </div>
+
+        <!-- ... CONTINUE THIS PATTERN FOR ALL VESSELS ... -->
+        <!-- Example for a vessel that had an empty image column in your HTML: -->
+        <div class="fleet-item-row">
+            <div class="fleet-image-col">
+                <img decoding="async" src="assets/images/fleet_images/placeholder_ship.jpg" alt="MYD Ningbo"> <!-- Use a placeholder or find image -->
+            </div>
+            <div class="fleet-details-col">
+                <h5>MYD Ningbo</h5>
+                <p>Built: 1999<br>Deadweight: 19,309 MT<br>Gross Tonnage: 17,887 MT<br>Container Capacity: 1,618 TEU<br>Reefer Capacity: 170 sockets<br>Length Overall: 181.72 m</p>
+            </div>
+        </div>
+
+        <p><em>More vessels to be listed here...</em></p>
+    </section>
+    <div style="clear:both;"></div>

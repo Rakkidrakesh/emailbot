@@ -1,0 +1,123 @@
+<style>
+    /* Styles for the offices page - you can move these to style.css for better organization */
+    .content-section h1 { margin-bottom: 20px; }
+    .office-map-image-container { text-align: center; margin-bottom: 30px; } /* For centering the image */
+    .offices-section h3 { font-size: 1.5em; margin-top: 30px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; color: #333; }
+    .offices-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 30px;}
+    .office-category h4 { font-size: 1.3em; margin-bottom: 15px; color: #E60000; /* GFS Red */ display: flex; align-items: center; }
+    .office-category img.flag-icon { vertical-align: middle; margin-right: 10px; height: 20px; width: auto; border: 1px solid #eee; }
+    .office-location { background-color: #f9f9f9; padding: 15px; border-radius: 4px; border: 1px solid #e0e0e0; }
+    .office-location h5 { font-size: 1.1em; margin-top: 0; margin-bottom: 8px; text-transform: initial !important; color: #444; }
+    .office-location p, .office-location address { margin-bottom: 10px; line-height: 1.7; font-style: normal; font-size: 0.9em; }
+</style>
+
+<section class="content-section">
+    <h1>OFFICES</h1>
+
+    <!-- Replaced placeholder with an image -->
+    <div class="office-map-image-container">
+        <!-- Make sure 'office_locations_map.jpg' (or your chosen name) is in 'assets/images/' -->
+        <img src="assets/images/office_locations_map.png" alt="GFS Office Locations Map" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto 30px auto; border: 1px solid #ccc; border-radius: 5px;">
+    </div>
+
+    <div class="offices-section">
+        <h3>MAIN OFFICES</h3>
+        <div class="offices-grid">
+            <div class="office-location">
+                <h5>DUBAI, CORPORATE HQ</h5>
+                <address>
+                    Global Feeder Shipping LLC.,<br>
+                    Building 04, Bay Square, Al Asayel Street,<br>
+                    Business Bay, Dubai – UAE,<br>
+                    Tel: +971 4 – 210 51 05,<br>
+                    Fax: +971 4 – 210 51 06
+                </address>
+            </div>
+            <div class="office-location">
+                <h5>SINGAPORE</h5>
+                <address>
+                    Global Feeder Shipping Pte Ltd<br>
+                    600 North Bridge Road, #09-06/07/08,<br>
+                    Parkview Square, Singapore 188778<br>
+                    Tel: (+65) 69043606<br>
+                    Fax: (+65) 69043325
+                </address>
+            </div>
+            <div class="office-location">
+                <h5>MALAYSIA</h5>
+                <address>
+                    Global Feeder Shipping (M) Sdn Bhd<br>
+                    Suite 10.02 Level 10,<br>
+                    Menara Trend Intan Millennium Square,<br>
+                    No:68, Jalan Batai Laut 4, Taman Intan,<br>
+                    41300 Klang,Selangor Darul Ehsan.<br>
+                    Tel : +603 3343 9585<br>
+                    Fax : +603 3343 9586
+                </address>
+            </div>
+            <div class="office-location">
+                <h5>MUMBAI</h5>
+                <address>
+                    Sima Marine (India) Pvt. Ltd.<br>
+                    Seawoods Grand Central, E-Wing,<br>
+                    Unit No: E-704-707, Tower 2, 7th Floor,<br>
+                    Plot No R1, Sector 40, Seawoods,<br>
+                    Nerul Node, Navi Mumbai – 400706<br>
+                    Tel: +91 22 67339000<br>
+                    Fax: +91 22 67339001
+                </address>
+            </div>
+        </div>
+    </div>
+
+    <div class="offices-section">
+        <h3>AGENTS</h3>
+        <div class="office-category">
+            <!-- Ensure flag images are in assets/images/flags/ and paths are correct -->
+            <h4><img src="assets/images/flags/djibouti_placeholder.jpg" alt="Djibouti Flag" class="flag-icon"> AFRICA</h4>
+            <div class="offices-grid">
+                <div class="office-location">
+                    <h5>Djibouti</h5>
+                    <p>Sima Marine Djibouti<br>Lob 013, Djibouti Free Zone, P.O. Box 194, Djibouti<br>TEL : +25321354441</p>
+                </div>
+                <div class="office-location">
+                    <h5>Egypt - Sokhna Port</h5>
+                    <p>Marsa Shipping Services<br>127 El Horeya Street, Bab Shark, 3rd Floor – Apartment 301<br>Alexandria (Egypt)<br>Tel : +203 4969003 / +203 4979007<br>Group Mail : gfs@marsa-ss.com</p>
+                </div>
+                <!-- ... Add all other African agent offices from your original HTML ... -->
+                <div class="office-location">
+                    <h5>Kenya</h5>
+                    <p>Sima Marine (K) Ltd.<br>1st Floor Biashara Building, Nyerere Avenue<br>P.O. Box 81250-80100, Mombasa, Kenya<br>Tel: +254 (020) 2584 185 / +254 (041) 2220 678 / 679</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="office-category">
+            <h4><img src="assets/images/flags/india_placeholder.png" alt="India Flag" class="flag-icon"> INDIA</h4>
+             <div class="offices-grid">
+                <div class="office-location">
+                    <h5>Chennai</h5>
+                    <p>Sima Marine (India) Pvt. Ltd.<br>Seethakathi Buisness Centre, 9th Floor, Office No.1,<br>Anna Salai, Chennai -600002<br>Tel: +91 4428295647, 5646</p>
+                </div>
+                 <div class="office-location">
+                    <h5>Cochin</h5>
+                    <p>MBK Logistix Private Limited.<br>39/6720, H BAB Towers, M.G.Road, Kochi 682 015;<br>Tel: 0484 4037001</p>
+                </div>
+                <!-- ... Add all other Indian agent offices from your original HTML ... -->
+            </div>
+        </div>
+         <!-- ... Add other regions like INDONESIA, IRAQ, SAUDI ARABIA etc., following the same pattern ... -->
+         <!-- Example for SAUDI ARABIA -->
+         <div class="office-category">
+            <h4><img src="assets/images/flags/sa_flag.png" alt="Saudi Arabia Flag" class="flag-icon"> SAUDI ARABIA</h4>
+             <div class="offices-grid">
+                <div class="office-location">
+                    <h5>Dammam & Jubail</h5>
+                    <p>Globe Marine Services Co<br>P.O. Box 1814, Near Dammam Sheraton Hotel And Tower<br>Al Ashrea Street, Al Badea District, Dammam – 31441, Saudi Arabia<br>Tel: +966 3 835 2222<br>Fax: + 966 3 835 1222</p>
+                </div>
+                <!-- ... Add Jeddah ... -->
+            </div>
+        </div>
+
+    </div>
+</section>

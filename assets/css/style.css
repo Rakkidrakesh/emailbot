@@ -1,0 +1,223 @@
+/* Basic Reset */
+body, h1, h2, h3, h4, h5, p, ul, li, nav, header, main, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6; /* Light background for the page */
+}
+
+.site-container {
+    max-width: 1400px; /* Max width of the site */
+    margin: 0 auto;
+    background-color: #fff; /* White background for content area */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header Styles */
+.site-header {
+    padding: 15px 2%; /* Use percentage for responsiveness */
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px; /* Inner container for header elements */
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
+.contact-info-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.contact-info-header .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contact-info-header .info-item i {
+    font-size: 1.3rem;
+    color: #E60000; /* GFS Red */
+    margin-top: 2px;
+}
+.contact-info-header .info-item strong {
+    color: #E60000;
+    font-weight: bold;
+}
+.contact-info-header .closed-text {
+    font-size: 0.7rem;
+    color: #777;
+}
+
+/* Navigation Styles */
+.main-navigation {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+    justify-content: center;
+}
+
+.main-navigation li a {
+    display: block;
+    padding: 15px 18px;
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.main-navigation li a:hover,
+.main-navigation li a.active-link {
+    color: #E60000; /* GFS Red */
+    border-bottom-color: #E60000;
+    text-decoration: none;
+}
+
+/* Main Content Area */
+.middle-content-area {
+    padding: 25px 3%; /* Padding around main content */
+}
+.content_wrap { /* From your provided HTML, assuming it's a general wrapper */
+    /* Add styling if needed, e.g., max-width */
+}
+.page-content-wrapper {
+    /* Styles for the div wrapping included HTML content */
+}
+.page-content-wrapper h1,
+.page-content-wrapper h2,
+.page-content-wrapper h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.page-content-wrapper p {
+    margin-bottom: 1em;
+    line-height: 1.7;
+}
+
+
+/* Service Routes Specific Styles */
+#service-routes-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+#service-routes-sidebar {
+    flex: 0 0 250px; /* Fixed width for sidebar */
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+#service-routes-sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+#route-selector {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+#service-routes-main {
+    flex: 1; /* Main content takes remaining space */
+    min-width: 300px; /* Ensure it doesn't get too squished */
+}
+#route-image-container {
+    margin-bottom: 20px;
+    text-align: center; /* Center the image */
+}
+#route-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: none; /* Hidden by default */
+}
+#route-description h3 {
+    font-size: 1.5em;
+    color: #E60000;
+    margin-bottom: 10px;
+}
+#ports-of-call {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+#ports-of-call h4 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+
+/* Footer Styles */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ccc;
+    font-size: 0.9em;
+    border-top: 1px solid #444;
+}
+
+/* Responsive Adjustments (Example) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact-info-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main-navigation ul {
+        justify-content: flex-start; /* Align left for better scrolling on mobile */
+        overflow-x: auto; /* Allow horizontal scroll for nav */
+        white-space: nowrap;
+        padding-bottom: 5px; /* Space for scrollbar */
+    }
+    .main-navigation li a {
+        padding: 12px 10px;
+        font-size: 0.8rem;
+    }
+    #service-routes-content {
+        flex-direction: column;
+    }
+    #service-routes-sidebar {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-right: 0;
+        margin-bottom: 20px;
+        flex-basis: auto; /* Allow it to take full width */
+    }
+}

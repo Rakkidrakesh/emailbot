@@ -1,0 +1,24 @@
+<h2>Service Routes</h2>
+<div id="service-routes-content-container">
+    <aside id="service-routes-sidebar">
+        <h3>Select Service Route</h3>
+        <select id="route-selector">
+            <option value="">-- Select a Route --</option>
+            <!-- Options will be populated by JavaScript using data from page_data.php -->
+        </select>
+    </aside>
+    <section id="service-routes-main-display">
+        <div id="route-image-container">
+            <!-- Ensure a placeholder image exists or set src to empty initially -->
+            <img id="route-image" src="assets/images/service_routes_maps/placeholder_map.png" alt="Select a route to see map" style="display:block; max-width:100%; border:1px solid #eee;">
+        </div>
+        <div id="route-details">
+            <h3 id="route-title">Route Details</h3>
+            <p id="route-description-text">Select a route from the dropdown to view its details.</p>
+            <h4>Ports of Call:</h4>
+            <ul id="ports-of-call-list">
+                <li>Select a route</li>
+            </ul>
+        </div>
+    </section>
+</div>

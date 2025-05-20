@@ -1,0 +1,64 @@
+<style>
+    .contact-grid { display: flex; flex-wrap: wrap; gap: 30px; }
+    .contact-form-col { flex: 2 1 60%; min-width: 300px; }
+    .contact-hq-col { flex: 1 1 35%; min-width: 280px; }
+    .contact-hq-col h3 { margin-bottom: 10px;}
+    .contact-hq-col address { font-style: normal; line-height: 1.7; margin-bottom: 20px;}
+    .map-iframe-container { width: 100%; max-width: 320px; height: 330px; border: 1px solid #ccc; } /* Responsive iframe */
+    .contact-banner-image { margin-top: 30px; }
+    .contact-banner-image img { max-width: 100%; height: auto; }
+    /* Form styles from career.html can be reused or made more general in style.css */
+</style>
+
+<section class="content-section">
+    <div class="contact-grid">
+        <div class="contact-form-col">
+            <h3>We want to hear from you</h3>
+            <p><em>Note: This form is for display. PHP backend needed for submission.</em></p>
+            <form id="main-contact-form" class="contact-form-style" method="post">
+                <div class="form-group">
+                    <label for="contact_name">Your Name (required)</label>
+                    <input type="text" id="contact_name" name="your-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact_email">Your Email (required)</label>
+                    <input type="email" id="contact_email" name="your-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact_number">Your Number</label>
+                    <input type="tel" id="contact_number" name="number-651">
+                </div>
+                <div class="form-group">
+                    <label for="contact_subject">Subject</label>
+                    <input type="text" id="contact_subject" name="your-subject">
+                </div>
+                <div class="form-group">
+                    <label for="contact_message">Your Message (required)</label>
+                    <textarea id="contact_message" name="your-message" rows="4" required></textarea>
+                </div>
+                <!-- ReCaptcha shortcode [recaptcha] won't work without a plugin. Remove or implement server-side. -->
+                <div class="form-group">
+                    <button type="submit" class="button-primary">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-hq-col">
+            <h3>Headquarters</h3>
+            <address>
+                <strong>Global Feeder Shipping LLC.,</strong><br>
+                Building 04, Bay Square,<br>
+                Al Asayel Street, Business Bay<br>
+                P.O. Box 23174,<br>
+                Dubai – United Arab Emirates<br>
+                Tel: +971 4 – 210 51 05<br>
+                Fax: +971 4 – 210 51 06
+            </address>
+            <div class="map-iframe-container">
+                <iframe style="border:0; width:100%; height:100%;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14442.020964038238!2d55.2799377!3d25.1861786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaca6fca5615746a3%3A0x4dcf3ebd44b20e45!2sGlobal%20Feeder%20Shipping%20LLC!5e0!3m2!1sen!2sin!4v1716875625463!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="contact-banner-image">
+        <img decoding="async" src="https://globalfeeders.com/wp-content/uploads/2018/04/containers.jpg" alt="Container Ship Banner">
+    </div>
+</section>
